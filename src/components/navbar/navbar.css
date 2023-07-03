@@ -1,0 +1,297 @@
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main_header_arae {
+  position: absolute;
+  width: 100%;
+  z-index: 9999;
+  padding: 0;
+}
+
+.main_header_arae .header-first {
+  border-bottom: 1px solid #ffffff3d;
+}
+
+.top-header {
+  padding-top: 6px;
+  /* padding-bottom: 10px; */
+  background-color: transparent;
+}
+
+.left-header {
+  width: 50%;
+}
+
+.left-header .react-icons {
+  width: 20%;
+}
+
+.left-header .left-head-details {
+  width: 80%;
+}
+
+.left-header .left-head-details .contact_details {
+  width: 75%;
+}
+
+.left-header .left-head-details .contact_details .cont-detl,
+.right-header .topbar-other-options .btn-line {
+  position: relative;
+  list-style-type: none;
+  display: inline-block;
+  color: #fff;
+  margin-right: 25px;
+  font-size: 14px;
+  padding-top: 2px;
+}
+
+.left-header .left-head-details .contact_details .cont-detl:before,
+.right-header .topbar-other-options .btn-line:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -15px;
+  width: 1px;
+  height: 15px;
+  background-color: #dbdbdb78;
+}
+
+.right-header {
+  width: 50%;
+}
+
+.right-header .right_ul {
+  width: 65%;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown .dropbtn li a {
+  color: #fff;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 0 15px 0 rgba(0,0,0,.1);
+  z-index: 1;
+  padding: 10px 0;
+  border-radius: 8px;
+  width: 230px;
+  transition: all .2s ease-in-out;
+}
+
+.dropdown-content .drop-item {
+  margin: 0;
+  padding: 10px 25px;
+}
+
+.dropdown-content .drop-item a {
+  padding: 0;
+  display: inline-block;
+  color: rgb(33, 37, 41);
+  font-size: 15px;
+  font-weight: 500;
+  position: relative;
+  font-family: Poppins,sans-serif;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover,
+.dropdown-content .drop-item a:hover {
+  color: #8b3eea;
+}
+.dropdown-content .drop-item:hover {
+  background-color: #f7f7f7;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.navbar {
+  width: 100%;
+  max-width: 100%;
+  min-height: 6vh;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.scrolled {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99999999999;
+  box-shadow: 0 2px 28px 0 rgba(0,0,0,.06);
+  background: #8b3eea !important;
+  animation: fadeInDown .5s ease-in-out 0s 1 normal none running;
+  transition: .6s;
+}
+.logo img {
+  width: 100%;
+}
+
+.navbar .navigation ul {
+  box-sizing: border-box;
+  list-style-type: none;
+  display: flex;
+  min-height: 6vh;
+  justify-content: flex-end;
+  align-items: center;
+}
+.navbar .navigation ul li {
+  text-align: center;
+  padding: 0.5em;
+  cursor: pointer;
+}
+/* .navbar .navigation ul li:hover {
+  background-color: plum;
+  color: white;
+} */
+
+/* .navbar .navigation ul li a {
+  text-decoration: none;
+  color: inherit;
+} */
+
+/* nav-link bottom line */
+.navbar .navigation .navigation-list .navigation-items .nav-link {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  padding-bottom: 5px;
+  transition: 0.4s all ease-in-out;
+  font-weight: 300;
+  font-family: Poppins, sans-serif;
+  position: relative;
+}
+.navbar .navigation .navigation-list .navigation-items .nav-link:before {
+  content: "";
+  width: 0;
+  height: 1px;
+  bottom: 0;
+  position: absolute;
+  left: auto;
+  right: 0;
+  z-index: -1;
+  transition: width 0.5s cubic-bezier(0.25, 0.8, 0.25, 1) 0s;
+  background: #fff;
+}
+.navbar .navigation .navigation-list .navigation-items .nav-link:hover:before {
+  width: 100%;
+  left: 0;
+  right: auto;
+}
+
+/* button css */
+
+.others-options {
+  margin-left: 25px;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .others-options .option-item:first-child {
+    margin-right: 30px;
+  }
+}
+
+.btn_navber {
+  color: #fff;
+  border: 2px solid #8b3eea;
+  padding: 7px 10px;
+  transition: 0.4s all ease-in-out;
+  box-shadow: none;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  z-index: 0;
+}
+
+.btn_navber:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 550px;
+  height: 550px;
+  margin: auto;
+  border-radius: 50%;
+  z-index: -1;
+  transform-origin: top center;
+  background: #8b3eea;
+  transform: translateX(-51%) translateY(27%) scale(0.8);
+  transition: 0.4s all ease-in-out;
+}
+
+/* hover */
+.others-options .btn:hover {
+  border: 2px solid #8b3eea !important;
+}
+
+.btn_navber:hover:before {
+  transition: transform 1s;
+  transform: translateX(-42%) translateY(-57%) scale(4);
+  transform-origin: bottom center;
+}
+
+/* top header  */
+.header-first
+  .header-first-area
+  .top-header
+  .react-icons
+  .icon-list
+  .icon-detials
+  a,
+.left-header .left-head-details .contact_details .cont-detl a,
+.right-header .topbar-other-options .option-details a {
+  list-style-type: none;
+  display: inline-block;
+  color: #fff;
+  margin-right: 5px;
+  font-size: 14px;
+}
+
+.right-header .topbar-other-options .option-details {
+  margin-right: 20px;
+}
+.right-header .topbar-other-options .option-details:nth-child(1) .login-btn,
+.right-header .topbar-other-options .option-details:nth-child(2) .signup-btn {
+  font-weight: 500;
+}
+/* hover */
+.left-header .left-head-details .contact_details .cont-detl .phone_no:hover,
+.left-header .left-head-details .contact_details .cont-detl .email:hover,
+.right-header .topbar-other-options .option-details:nth-child(1) .login-btn:hover,
+.right-header .topbar-other-options .option-details:nth-child(2) .signup-btn:hover {
+  color: #000 !important;
+}
+.right-header .topbar-other-options .option-details .language-option .dropbtn {
+  background: transparent;
+  border: 0;
+  color: #fff;
+}
+.right-header .topbar-other-options .option-details .language-option .dropbtn .btn_color {
+  color: #000;
+}
